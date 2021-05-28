@@ -1,0 +1,60 @@
+ body {
+ height:auto;
+ overflow-y: scroll; 
+    font-family: 'Poiret One' ;
+    background-color: black;
+    color:white;text-align: center;
+  }
+
+  body::-webkit-scrollbar {
+    display: none;
+}
+  * {
+    box-sizing: border-box;
+  }
+  
+  .container, .sections, .section {
+    position: relative;
+    height:auto;
+  }
+.section0 .header{position: fixed;display: block;top:0;width:100%;height:100px}
+  .header h1{font-size: 100%;left:0;color:rgb(6, 15, 43) ;background-color: white;width: 146px;margin-bottom:0;padding: 0; font-family: 'Sen';}
+
+  .header h1 a{text-decoration: none;outline:none;font-size: 100%;left:0;color:rgb(6, 15, 43) ;background-color: white;width: 146px;margin-bottom:0;padding: 0;}
+
+  .header h2{padding:0;font-size:80%; color:rgb(151, 19, 45);font-family: 'Poiret One';margin-top: 0;text-align: left;}
+
+  .header h2 a{text-decoration: none;outline:none;padding:0;font-size:80%; color:rgb(151, 19, 45);font-family: 'Poiret One';margin-top: 0;}
+
+  .section0 h1{font-family:'Sen';font-size:  700%;padding:0; margin-bottom: 0 ;margin-top: 20px;background-color: rgb(181, 219, 217); color:rgb(6, 15, 43)}
+
+  .section0 h2{color: rgb(151, 19, 45);margin-bottom:7%;transition: ease-in-out 2.5s;font-size:200%;font-family: 'Poiret One';margin-top:0;margin-bottom: 100px;}
+
+.btn-photo {background-color: black; color:white;outline: none;border:none;text-decoration: none; font-family: 'Poiret One';margin: 0; font-size: 175%;z-index:10;}
+
+.img-btn{height:200px;width:300px;display:inline-block; justify-content: center;align-items: center;transition: ease-in 0.2s;}
+
+.img-btn a{text-decoration: none;outline: none;}
+.img-btn img{opacity:0.2;object-fit: cover;height: 200px;width:300px;z-index:1;transition: ease-in 0.2s;}
+
+.menu{position: relative;display: inline-block;justify-content: center;align-items: center;width:100%}
+
+.img-btn:hover img{opacity: 1;transform: scale(1.4);border-radius: 5px;}
+.img-btn:hover .btn-photo{transform: scale(1.4);z-index:999;border-radius: 5px;color:rgb(151, 19, 45)}
+
+
+@media only screen and (max-width: 800px) {
+
+  .section0 h1{ 
+     font-size: 5em; 
+  }
+  .header{height:135px}
+
+}
+@media only screen and (max-width: 600px) {
+
+  .section0 h1{ 
+     font-size: 3em; 
+  }
+  .header{height:95px}
+}
